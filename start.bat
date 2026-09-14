@@ -13,17 +13,27 @@ pause
 exit /b 1
 
 :nodeok
-if exist "node_modules" goto run
+if exist "node_modules" goto deps
 echo Установка зависимостей...
 call npm install
-if %errorlevel%==0 goto run
+if %errorlevel%==0 goto deps
 echo [ОШИБКА] npm install не завершился успешно
 pause
 exit /b 1
 
-:run
-start "" "http://localhost:3000"
+:deps
+if exist "dist" goto serve
+echo Сборка фронтенда...
+call npm run build
+if %errorlevel%==0 goto serve
+echo [ОШИБКА] Не удалось собрать фронтенд. Проверьте вывод выше
+pause
+exit /b 1
+
+:serve
+start "Кинотека (сервер)" cmd /c "node server\server.js"
 echo Запуск сервера Кинотека на http://localhost:3000
-echo Для остановки закройте это окно или нажмите Ctrl+C
-node server\server.js
+echo Для остановки сервера закройте окно "Кинотека (сервер)"
+ping -n 3 127.0.0.1 >nul
+start "" "http://localhost:3000"
 pause
