@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+; Убираем ускорение (0 = выкл, 1 = вкл)
+;[HKEY_CURRENT_USER\Control Panel\Mouse]
+;"MouseSpeed"="0"
+
+; Добавляем максимальное ускорение
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+
+; Самая высокая чувствительность, которую разрешает Windows
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSensitivity"="20"
+
+; Дополнительно: отключаем «повышение точности» (Enhance Pointer Precision)
+;[HKEY_CURRENT_USER\Control Panel\Mouse]
+;"MouseTrails"="-1"

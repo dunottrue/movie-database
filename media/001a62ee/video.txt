@@ -1,0 +1,30 @@
+/h		This help
+/fullscreen	Fullscreen mode
+/windowed	Windowed mode
+/borderless	Borderless windowed mode
+/allowrotatedfullscreen	Allow going to fullscreen mode on a portrait monitor
+/width=n	Width in pixels  (fullscreen/windowed)
+/height=n	Height in pixels (fullscreen/windowed)
+/widthFS=n	Width in pixels  (fullscreen)
+/heightFS=n	Height in pixels (fullscreen)
+/widthW=n	Width in pixels  (windowed)
+/heightW=n	Height in pixels (windowed)
+/refreshrate=n	Refresh rate in Hz
+/vsync=b	Enable/disable V-sync (0-1)
+/aniso=n	Anisotropic filter (0-7, default: 3)
+/shadows=n	Shadow quality (0-2, default: 1)
+/shadowres=n	Shadow resolution (0-1, default: 0)
+/ssao=b	Enable/disable SSAO (default: enabled)
+/plspec=b	Enable/disable pointlight specular (default: enabled)
+/posteffects=b	Enable/disable posteffects (default: enabled)
+/lodfactor=n	Geometric detail (0-4, default: 1)
+/decals=n	Decal draw range (0-2, default: 1)
+/edgefade=b	Enable/disable edge fade effect
+/disablecrashdialog	Disable windows error dialog on crash
+/motionblur=b	Enable/Disable MotionBlur
+/fxaa=b	Enable/Disable FXAA
+/landscapedebris=b	Enable/Disable landscape debris
+/dynamicshadows=n	Dynamic light shadow amount (0-4, default: 2)
+/softparticles=b	Enable/Disable soften particle edges
+/terrainparallax=b	Enable/Disable parallax occlusion mapping 
+/heathaze=b	Enable/Disable	heathaze 
