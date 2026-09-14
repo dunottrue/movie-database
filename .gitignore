@@ -1,0 +1,9 @@
+node_modules
+dist
+media
+data/movies.json
+data/users.json
+data/kinopoisk_config.json
+*.log
+*.log.err
+*.tsbuildinfo
